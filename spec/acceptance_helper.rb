@@ -1,6 +1,7 @@
 require 'rails_helper'
 require 'rspec_api_documentation'
 require 'rspec_api_documentation/dsl'
+require 'support/factory_girl'
 
 RspecApiDocumentation.configure do |config|
   config.format = :json

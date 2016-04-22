@@ -12,7 +12,7 @@ class SamplesCreationService
       sample = Sample.new(value_hash)
       sample.valid?
 
-      raise SamplesCreationError if sample.errors[:capture_time].include? 'cannot be in the future'
+      raise SamplesCreationError if sample.errors[:capture_time].include? 'can not be in future'
 
       if sample.errors.added? :capture_time, :uniqueness
         Rails.logger.warn "Sample with capture_time already exists."

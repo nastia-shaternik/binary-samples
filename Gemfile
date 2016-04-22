@@ -45,6 +45,7 @@ group :development, :test do
   gem 'rspec-rails', github: 'rspec/rspec-rails'
   gem 'rspec_api_documentation'
   gem 'database_cleaner'
+  gem "factory_girl_rails"
 end
 
 gem "apitome"
