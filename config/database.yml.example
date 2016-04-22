@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: binary-samples
+  password:
+
+development:
+  <<: *default
+  database: binary-samples_development
+
+test:
+  <<: *default
+  database: binary-samples_test
+
+production:
+  <<: *default
+  database: binary-samples_production
+  username: binary-samples
+  password: <%= ENV['BINARY-SAMPLES_DATABASE_PASSWORD'] %>
