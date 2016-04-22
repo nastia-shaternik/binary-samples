@@ -1,3 +1,54 @@
+GIT
+  remote: git://github.com/rspec/rspec-core.git
+  revision: cf8dfdc76586a9bb09da0bd03f0da3f2cf8fc580
+  specs:
+    rspec-core (3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-expectations.git
+  revision: d5b6b35d518ab6692f894d2f124608878c1da946
+  specs:
+    rspec-expectations (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-mocks.git
+  revision: e523c5e4fbd1639dfc7881d1a16d15ff458fc486
+  specs:
+    rspec-mocks (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-rails.git
+  revision: b2203789cf28a984e10bb3f57aa75989377340ff
+  specs:
+    rspec-rails (3.5.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.5.0.pre)
+      rspec-expectations (= 3.5.0.pre)
+      rspec-mocks (= 3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-support.git
+  revision: d8666d5fc14ac08f23b7b9796b42e65bca66bb55
+  specs:
+    rspec-support (3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec.git
+  revision: fac1b06a2e74b2ce33b7a9e6b8e6cb74c8f24e47
+  specs:
+    rspec (3.5.0.pre)
+      rspec-core (= 3.5.0.pre)
+      rspec-expectations (= 3.5.0.pre)
+      rspec-mocks (= 3.5.0.pre)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,16 +89,23 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    apitome (0.1.0)
+      kramdown
+      railties
+      rspec_api_documentation
     arel (7.0.0)
     builder (3.2.2)
     byebug (8.2.4)
     concurrent-ruby (1.0.1)
+    database_cleaner (1.5.3)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     json (1.8.3)
+    kramdown (1.10.0)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -61,6 +119,7 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mustache (0.99.8)
     nio4r (1.2.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -100,6 +159,11 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rspec_api_documentation (4.7.0)
+      activesupport (>= 3.0.0)
+      json (~> 1.4, >= 1.4.6)
+      mustache (~> 0.99, >= 0.99.4)
+      rspec (>= 3.0.0)
     spring (1.7.1)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -123,11 +187,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apitome
   byebug
+  database_cleaner
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma
   rails (>= 5.0.0.beta3, < 5.1)
+  rspec!
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
+  rspec_api_documentation
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
