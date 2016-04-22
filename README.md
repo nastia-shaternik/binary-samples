@@ -1,24 +1,18 @@
-## README
+## Preparation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* run `bundle` to install gems
+* copy database config `cp config/database.yml.example
+  config/database.yml`
+* create dev database `rails db:setup`
+* create test database `rails db:test:prepare`
+* run specs `rspec`
 
-Things you may want to cover:
+## API documentation
 
-* Ruby version
+You can easily view API docs if you run server - `rails s` and then go
+to `/api/docs`
 
-* System dependencies
+## Optionally
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+BTW, you can create `.ruby-gemset` file in order to isolate this project
+specific gems.
