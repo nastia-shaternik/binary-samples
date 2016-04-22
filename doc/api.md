@@ -1,3 +1,3 @@
-Binary Samples Documentation
+Documentation
 =====================
 

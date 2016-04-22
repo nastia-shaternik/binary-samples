@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "Binary Sample",
+      "examples": [
+        {
+          "description": "Decode binary and save samples",
+          "link": "binary_sample/decode_binary_and_save_samples.json",
+          "groups": "all",
+          "route": "/samples",
+          "method": "post"
+        },
+        {
+          "description": "List samples by sensor ID",
+          "link": "binary_sample/list_samples_by_sensor_id.json",
+          "groups": "all",
+          "route": "/samples",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}
